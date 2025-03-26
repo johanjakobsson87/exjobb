@@ -43,7 +43,7 @@ def main():
     
     
     JFgenerator = JitterFileGenerator()
-    JFgenerator.generate_jitter_file(1540, 1500)
+    JFgenerator.generate_jitter_file(1540, 2500)
 
 
 if __name__ == "__main__":
