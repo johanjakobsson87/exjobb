@@ -1,11 +1,5 @@
 # Program that takes JitterStart and JitterLength as inputs and generates a jitterfile (.txt) as output.
 
-
-
-
-
-
-
 class JitterFileGenerator:
     def __init__(self, numberOfFrames = 275, startingMS = 520):
         self.numberOfFrames = numberOfFrames
@@ -21,9 +15,7 @@ class JitterFileGenerator:
         
         # Get start and end index of jitter
         jitterStartIndex = int((JitterStart - self.startingMS) / 20 )
-        print("Jitter start index: ", jitterStartIndex)
         jitterEndIndex =  int(((JitterStart + JitterLength)- self.startingMS) / 20)
-        print("Jitter end index: ", jitterEndIndex)
 
         # Add jitter between the startindex and the endindex of the jitter. All following timestamps increments by 20
         for i in range(jitterStartIndex, jitterEndIndex):
@@ -37,14 +29,11 @@ class JitterFileGenerator:
             for i in range(self.numberOfFrames):
                 f.write(f"{i+1}, {timestamps[i]}\n")
                 
-
-
-def main():
-    
-    
+'''
+def main():    
     JFgenerator = JitterFileGenerator()
     JFgenerator.generate_jitter_file(1540, 2500)
 
-
 if __name__ == "__main__":
     main()
+'''
