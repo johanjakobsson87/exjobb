@@ -29,11 +29,10 @@ class JitterFileGenerator:
             for i in range(self.numberOfFrames):
                 f.write(f"{i+1}, {timestamps[i]}\n")
                 
-'''
+
 def main():    
     JFgenerator = JitterFileGenerator()
     JFgenerator.generate_jitter_file(1540, 2500)
 
 if __name__ == "__main__":
     main()
-'''
