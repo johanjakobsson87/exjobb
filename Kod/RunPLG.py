@@ -2,7 +2,6 @@ from PktLossGenerator import PaketlossGenerator
 import argparse
 
 def main():
-    print("kjkj")
     parser = argparse.ArgumentParser(description="Generate packet loss files with the parameters 1. jitterstart, 2. jitterstop, 3. jitterlength, and 4. incrementby")
     parser.add_argument("PLstart", type = int, help = "The first packet loss time in milliseconds")
     parser.add_argument("PLstop", type = int, help="The last packet loss start time in milliseconds")
