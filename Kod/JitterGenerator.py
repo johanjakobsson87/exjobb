@@ -1,5 +1,5 @@
 # Program that takes JitterStart and JitterLength as inputs and generates a jitterfile (.txt) as output.
-
+# The jitterfile is a comma separated list of values.
 class JitterFileGenerator:
     def __init__(self, numberOfFrames = 275, startingMS = 520):
         self.numberOfFrames = numberOfFrames

@@ -1,5 +1,5 @@
-# Program that takes JitterStart and JitterLength as inputs and generates a jitterfile (.txt) as output.
-
+# Program that takes packetloss time and packetloss length as inputs and generates a packetloss file (.txt) as output.
+# A packetloss file is a file that contains the frame number and the timestamp of the frame.
 class PaketlossGenerator:
     def __init__(self, numberOfFrames = 275, startingMS = 520):
         self.numberOfFrames = numberOfFrames
