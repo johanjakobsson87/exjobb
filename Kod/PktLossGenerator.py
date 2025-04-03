@@ -10,11 +10,20 @@ class PaketlossGenerator:
         timestamps = []
         frameArray = []
         
+        timeleft = 6000 - PktLossTime
+        if PktLossLength > timeleft:
+            #print(f"{PktLossLength}-{timeleft}")
+            #PktLossLength = PktLossLength - timeleft
+            PktLossLength = timeleft
+            print("NEW PACKET LOSS LENGTH: " + str(PktLossLength))    
+        
+        
         #Calculate index of Pktloss and the number of lost frames
         pktLossStartIndex  = int((PktLossTime - self.startingMS) / 20 )
         numberOfFrameslost = int(PktLossLength/20)
         
         # Create array of timestamps
+        
         for i in range(0, (self.numberOfFrames - numberOfFrameslost)):
             if i == 0:
                 MS = self.startingMS
