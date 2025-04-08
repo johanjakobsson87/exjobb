@@ -9,14 +9,14 @@ class PaketlossGenerator:
         #Init arrays
         timestamps = []
         frameArray = []
-        
+        '''
         timeleft = 6000 - PktLossTime
         if PktLossLength > timeleft:
             #print(f"{PktLossLength}-{timeleft}")
             #PktLossLength = PktLossLength - timeleft
             PktLossLength = timeleft
             print("NEW PACKET LOSS LENGTH: " + str(PktLossLength))    
-        
+        '''
         
         #Calculate index of Pktloss and the number of lost frames
         pktLossStartIndex  = int((PktLossTime - self.startingMS) / 20 )
