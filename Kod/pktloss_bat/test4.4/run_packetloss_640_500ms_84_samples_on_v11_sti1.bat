@@ -1,3 +1,6 @@
+call run_OTTVideo_ClientInfo_640_480_25fps_K8 UsEnglish3_m1s3_16k.wav pktlossfile_500msLossAt520.txt 2000000 -EnableHaMode 0
+::call run_OTTVideo_ClientInfo_640_480_25fps_K8 UsEnglish3_m1s3_16k.wav pktlossfile_500msLossAt540.txt 2000000 -EnableHaMode 0
+::call run_OTTVideo_ClientInfo_640_480_25fps_K8 UsEnglish3_m1s3_16k.wav pktlossfile_500msLossAt560.txt 2000000 -EnableHaMode 0
 call run_OTTVideo_ClientInfo_640_480_25fps_K8 UsEnglish3_m1s3_16k.wav pktlossfile_500msLossAt580.txt 2000000 -EnableHaMode 0
 ::call run_OTTVideo_ClientInfo_640_480_25fps_K8 UsEnglish3_m1s3_16k.wav pktlossfile_500msLossAt600.txt 2000000 -EnableHaMode 0
 ::call run_OTTVideo_ClientInfo_640_480_25fps_K8 UsEnglish3_m1s3_16k.wav pktlossfile_500msLossAt620.txt 2000000 -EnableHaMode 0
