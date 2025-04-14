@@ -1,0 +1,6 @@
+call run_packetloss_640_500ms_84_samples_on_v12_sti4_test_412
+call run_packetloss_640_1000ms_74_samples_on_v12_sti4_test_413
+call run_burstjitter_640_500ms_84_samples_on_v12_sti4_test_59
+call run_burstjitter_640_1000ms_74_samples_on_v12_sti4_test_510
+
+::Should take approx. 2.5 hours
