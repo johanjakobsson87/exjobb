@@ -13,7 +13,12 @@ for filename in os.listdir(pathToUnprocessedLogs):
     if filename.endswith(fileEnding):
         with open(os.path.join(pathToUnprocessedLogs, filename), "r") as f:
             text = f.read()
-            text = "\n" + f"User: {filename[0]}, Subjective test: {filename[0:2]}"  + "\n" + text
+            user = filename[0]
+            if filename[1] == "0":
+                test = "TRAINING TEST"
+            else:
+                test = filename[0:2]
+            text = "\n" + f"User: {user}, Subjective test: {test}"  + "\n" + text
             text=text.replace(",", "\t")
             alltexts += text
 
