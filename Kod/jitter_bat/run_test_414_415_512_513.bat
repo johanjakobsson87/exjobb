@@ -1,0 +1,6 @@
+call run_burstjitter_640_1000ms_74_samples_on_v12_sti4_test_512_MEDbitrate
+call run_burstjitter_640_1000ms_74_samples_on_v12_sti4_test_513_LOWbitrate
+call run_packetloss_640_1000ms_74_samples_on_v12_sti4_test_414_MEDbitrate
+call run_packetloss_640_1000ms_74_samples_on_v12_sti4_test_415_LOWbitrate
+
+::Should take approx. 2.5 hours
