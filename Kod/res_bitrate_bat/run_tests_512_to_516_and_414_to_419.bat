@@ -1,0 +1,3 @@
+call run_bitrate_192_40_samples_on_v12_sti4_test_61
+call run_bitrate_320_40_samples_on_v12_sti4_test_62
+call run_bitrate_640_40_samples_on_v12_sti4_test_63
